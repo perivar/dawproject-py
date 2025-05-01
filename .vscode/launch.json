@@ -1,0 +1,33 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Launch createBitwigProject.py",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/examples/createBitwigProject.py",
+      "env": { "PYTHONPATH": "${workspaceFolder}" },
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}/examples"
+    },
+    {
+      "name": "Launch createExampleProject.py (Simple)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/examples/createExampleProject.py",
+      "env": { "PYTHONPATH": "${workspaceFolder}" },
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}/examples"
+    },
+    {
+      "name": "Launch createExampleProject.py (Advanced)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/examples/createExampleProject.py",
+      "env": { "PYTHONPATH": "${workspaceFolder}" },
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}/examples",
+      "args": ["-advanced"]
+    }
+  ]
+}

@@ -1,4 +1,5 @@
-# 🎵 DAWProject-Py  
+# 🎵 DAWProject-Py
+
 *Python code for working with DAWProject files — enabling DAW interoperability.*
 
 [![License](https://img.shields.io/github/license/roex-audio/dawproject-py)](LICENSE)
@@ -36,6 +37,7 @@ from classes.dawProject import DawProject
 ## 🚀 Quick Start
 
 ### **Loading a DAWProject file (XML-based)**
+
 ```python
 from classes.dawProject import DawProject
 
@@ -48,6 +50,7 @@ print(f"Tracks: {len(project.structure)}")
 ```
 
 ### **Creating an Empty DAWProject**
+
 ```python
 from classes.project import Project
 from classes.application import Application
@@ -61,6 +64,7 @@ DawProject.save_xml(project, "new_project.dawproject")
 ```
 
 ### **Creating a Project with Audio Tracks**
+
 ```python
 from classes.utility import Utility
 from classes.mixerRole import MixerRole
@@ -85,11 +89,30 @@ DawProject.save_xml(project, "audio_project.dawproject")
 ```
 
 ---
-##  🏗 Examples
+
+## 🚀 Getting Started
+
+Before running the examples, it's recommended to create a virtual environment to manage dependencies.
+
+```sh
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
+
+## 🏗 Examples
 
 An examples folder is included in this repository, demonstrating how to use DAWProject-Py in real-world scenarios. One example shows how to use the Tonn API to obtain multitrack mix settings for a DAWProject file.
 
-___
+To execute the `examples/createBitwigProject.py` script, navigate to the project directory in your terminal and run:
+
+```sh
+python examples/createBitwigProject.py
+```
+
+This will create a `RoEx_Automix.dawproject` and `RoEx_Automix.xml` file in the `target` directory.
+
+__
 
 ## 📜 DAWProject Format
 
@@ -109,12 +132,14 @@ For the full specification, visit [DAWProject on GitHub](https://github.com/bitw
 We **welcome contributions!** If you’d like to extend **DAWProject-Py**, whether by improving existing functionality or turning it into a **pip package**, feel free to contribute!
 
 ### **Clone the Repository**
+
 ```sh
 git clone https://github.com/roex-audio/dawproject-py.git
 cd dawproject-py
 ```
 
 ### **Contributing**
+
 - Fork the repository  
 - Create a feature branch (`git checkout -b feature-name`)  
 - Commit your changes (`git commit -m "Add feature XYZ"`)  
@@ -124,11 +149,13 @@ cd dawproject-py
 ---
 
 ## 📜 License
+
 This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
 
 ---
 
 ## 🌎 Stay Connected
+
 📢 Have ideas or feedback? Open an issue or start a discussion!
 
 🔗 **Website:** [www.roexaudio.com](https://dawproject.com)  
